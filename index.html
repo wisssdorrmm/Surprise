@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You 💜</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">For You 💜</div>
+  <button id="musicBtn">Play Music 🎵</button>
+</header>
+
+<audio id="bgMusic" loop>
+  <source src="music/song.mp3">
+</audio>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>For My Favorite Person</h1>
+  <p>This little corner of the internet is just for you.</p>
+  <a href="#album" class="scroll-btn">See Our Memories ↓</a>
+</section>
+
+<!-- ALBUM -->
+<section id="album" class="album">
+  <h2>Our Memories</h2>
+  <div class="gallery">
+    <img src="images/img1.jpg">
+    <img src="images/img2.jpg">
+    <img src="images/img3.jpg">
+    <img src="images/img4.jpg">
+  </div>
+</section>
+
+<!-- LETTER -->
+<section class="letter">
+  <h2>A Letter To You</h2>
+  <p id="letterText"></p>
+</section>
+
+<!-- PROPOSAL -->
+<section class="proposal">
+  <h2>Will you be my girlfriend?</h2>
+  <div class="buttons">
+    <button onclick="yes()">Yes 💜</button>
+    <button id="noBtn">No</button>
+  </div>
+</section>
+
+<!-- IMAGE MODAL -->
+<div id="modal" class="modal">
+  <span id="close">&times;</span>
+  <img id="modalImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
